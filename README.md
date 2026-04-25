@@ -1,2 +1,35 @@
 # chefconnect-london
 A London-focused private chef directory MVP built to help customers discover independent private chefs and for private chefs to advertise themselves
+The idea is to help customers discover independent private chefs in London for private dining, dinner parties, events, and at-home food experiences.
+
+## Project Status
+
+This project is currently in the planning stage.
+
+The first version will focus on building a simple directory where users can:
+
+- Browse private chef profiles
+- View chef experience, cuisine type, location, and starting price
+- Contact chefs directly
+- Allow chefs to apply to be listed
+
+## MVP Scope
+
+The first version will be a directory, not a full booking marketplace.
+
+This means the platform will not handle:
+
+- Payments
+- Bookings
+- Refunds
+- Cancellations
+- Reviews
+- Disputes
+
+These features may be added in future versions.
+
+## Target Location
+
+The MVP is focused on London only.
+
+Starting with one city keeps the project focused and easier to test before expanding to other locations.
