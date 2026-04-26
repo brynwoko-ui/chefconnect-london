@@ -1,36 +1,267 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# chefconnect-london
+A London-focused private chef directory MVP built to help customers discover independent private chefs and for private chefs to advertise themselves
+The idea is to help customers discover independent private chefs in London for private dining, dinner parties, events, and at-home food experiences.
 
-## Getting Started
+## Project Status
 
-First, run the development server:
+This project is currently in the planning stage.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The first version will focus on building a simple directory where users can: f
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Browse private chef profiles
+- View chef experience, cuisine type, location, and starting price
+- Contact chefs directly
+- Allow chefs to apply to be listed
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## MVP Scope
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The first version will be a directory, not a full booking marketplace.
 
-## Learn More
+This means the platform will not handle:
 
-To learn more about Next.js, take a look at the following resources:
+- Payments
+- Bookings
+- Refunds
+- Cancellations
+- Reviews
+- Disputes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+These features may be added in future versions.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Target Location
 
-## Deploy on Vercel
+The MVP is focused on London only.
+## Project Considerations and Limitations
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Before building this project, I considered several practical, legal, and operational limitations involved in creating a private chef directory.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Directory vs Marketplace
+
+The first version of this project is designed as a directory, not a full booking marketplace.
+
+Users can browse private chefs and make contact, but the platform does not currently handle bookings, payments, refunds, cancellations, or disputes.
+
+This keeps the MVP focused and reduces early complexity.
+
+### London-Only MVP
+
+The initial scope is limited to London.
+
+Starting with one city keeps the platform easier to design, test, and position because the chef profiles, search filters, and user journeys can focus on one geographic market first.
+
+Future versions could expand to other UK cities.
+
+### Food Safety
+
+Because private chefs prepare food for customers, food safety is an important consideration.
+
+Future versions should consider chef verification, including:
+
+- Food hygiene certificates
+- Food business registration
+- Public liability insurance
+- Allergen handling policies
+- Professional references
+
+The MVP does not automatically verify chefs. Chef applications would ideally be reviewed before being published.
+
+### Allergens and Dietary Requirements
+
+Allergens are a major risk in any food-related platform.
+
+The platform should encourage customers to discuss allergies, intolerances, and dietary requirements directly with chefs before making any arrangement.
+
+The MVP should avoid making claims such as "allergy-safe" unless proper verification exists.
+
+### Trust and Safety
+
+A private chef may enter a customer's home, so trust is essential.
+
+Future versions could include:
+
+- Identity verification
+- Verified chef badges
+- Customer reviews
+- Report features
+- Safer enquiry handling
+- Booking protection policies
+
+For the MVP, the focus is on clear chef profiles and manual review rather than automated trust systems.
+
+### Payments
+
+The first version does not process payments.
+
+Adding payments would require handling:
+
+- Deposits
+- Refunds
+- Cancellations
+- Chargebacks
+- Platform fees
+- Chef payouts
+- Disputes
+
+Payments may be added in a later version.
+
+### Reviews
+
+Reviews are not included in the first version.
+
+Although reviews can help build trust, they also create moderation challenges such as fake reviews, abusive content, and disputes between chefs and customers.
+
+Reviews may be added later once the platform has a stronger booking or enquiry process.
+
+### Data Privacy
+
+The platform may collect chef information such as names, emails, locations, bios, prices, and profile images.
+
+Future versions should include:
+
+- Privacy Policy
+- Terms of Use
+- Cookie Policy
+- Data retention rules
+- Clear user consent for submitted information
+
+The MVP should only collect the minimum data needed.
+
+### Marketplace Cold Start Problem
+
+The platform needs both chefs and customers to be useful.
+
+The first version can solve this by using a small set of high-quality demo chef profiles or manually approved early chef profiles.
+
+A future launch strategy could involve onboarding 10 to 20 London chefs before promoting the site publicly.
+
+### Future Improvements
+
+Planned future improvements include:
+
+- Chef registration database
+- Admin approval dashboard
+- Customer enquiry form
+- Chef profile editing
+- Cuisine and location filters
+- Verified chef badges
+- Reviews
+- Booking system
+- Payment integration
+- SEO pages for London areas and cuisine types
+Starting with one city keeps the project focused and easier to test before expanding to other locations.
+## Planned Website Pages
+
+The MVP will include the following pages:
+
+- Home page
+- Chef listing page
+- Individual chef profile page
+- Chef application page
+- About page
+
+## Planned Tech Stack
+
+The planned tech stack for this project is:
+
+- Next.js
+- React
+- Tailwind CSS
+- GitHub
+- Vercel
+
+The first version will use demo chef data before adding a real database.
+
+## MVP Features
+
+The first version of ChefConnect London will include:
+
+### Customer Features
+
+- View a homepage explaining the platform
+- Browse a list of private chefs in London
+- View individual chef profiles
+- See chef details such as cuisine type, experience, location, bio, and starting price
+- Contact or enquire about a chef
+
+### Chef Features
+
+- Apply to be listed on the platform
+- Submit basic profile information
+- Add cuisine specialties, experience, location, and contact details
+
+### Admin Features
+
+- Review chef applications before publishing profiles
+- Keep low-quality or incomplete profiles off the public directory
+
+Admin features may be handled manually in the first version before a full admin dashboard is built.
+
+## Version 1 Build Notes
+
+Version 1 of ChefConnect London focused on creating a simple working MVP without overcomplicating the project too early.
+
+The goal was to build the basic structure of the website first, then improve the product in future versions.
+
+### Version 1 Pages Built
+
+- Home page
+- Chef cuisine category page
+- Individual cuisine detail pages
+- Join as a chef page
+- Basic chef application form
+
+### Version 1 Decisions
+
+For the first version, I decided not to use fake chef profiles.
+
+Instead of adding random chef names, ratings, prices, and bios, the MVP uses cuisine categories such as:
+
+- British
+- Indian
+- Caribbean
+- African
+- Italian
+- Plant-Based
+
+This keeps the project honest while the platform is still being built.
+
+The chef category pages are designed to show where approved chef profiles will appear in the future.
+
+### Current User Journey
+
+The current user journey is:
+
+1. User lands on the homepage
+2. User clicks browse chefs
+3. User chooses a cuisine category
+4. User views a category page
+5. Chefs can use the "Join as a Chef" form to apply
+
+### Current Limitations
+
+Version 1 does not include:
+
+- Real chef profiles
+- Database storage
+- Login or authentication
+- Admin dashboard
+- Payment system
+- Ratings and reviews
+- Image or video uploads
+- Customer enquiry system
+
+These features are planned for future versions.
+
+### Issues Encountered During Version 1
+
+During the build, I encountered and solved several setup and coding issues.
+
+#### Node.js Was Not Installed
+
+When first trying to run Node commands, the terminal did not recognise `node`.
+
+This was fixed by installing Node.js on Windows and checking it with:
+
+"```bash
+node -v
+npm -v"
