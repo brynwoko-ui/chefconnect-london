@@ -149,4 +149,49 @@ Planned future improvements include:
 - Payment integration
 - SEO pages for London areas and cuisine types
 Starting with one city keeps the project focused and easier to test before expanding to other locations.
+## Planned Website Pages
 
+The MVP will include the following pages:
+
+- Home page
+- Chef listing page
+- Individual chef profile page
+- Chef application page
+- About page
+
+## Planned Tech Stack
+
+The planned tech stack for this project is:
+
+- Next.js
+- React
+- Tailwind CSS
+- GitHub
+- Vercel
+
+The first version will use demo chef data before adding a real database.
+
+## MVP Features
+
+The first version of ChefConnect London will include:
+
+### Customer Features
+
+- View a homepage explaining the platform
+- Browse a list of private chefs in London
+- View individual chef profiles
+- See chef details such as cuisine type, experience, location, bio, and starting price
+- Contact or enquire about a chef
+
+### Chef Features
+
+- Apply to be listed on the platform
+- Submit basic profile information
+- Add cuisine specialties, experience, location, and contact details
+
+### Admin Features
+
+- Review chef applications before publishing profiles
+- Keep low-quality or incomplete profiles off the public directory
+
+Admin features may be handled manually in the first version before a full admin dashboard is built.
