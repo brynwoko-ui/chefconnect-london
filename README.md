@@ -195,3 +195,73 @@ The first version of ChefConnect London will include:
 - Keep low-quality or incomplete profiles off the public directory
 
 Admin features may be handled manually in the first version before a full admin dashboard is built.
+
+## Version 1 Build Notes
+
+Version 1 of ChefConnect London focused on creating a simple working MVP without overcomplicating the project too early.
+
+The goal was to build the basic structure of the website first, then improve the product in future versions.
+
+### Version 1 Pages Built
+
+- Home page
+- Chef cuisine category page
+- Individual cuisine detail pages
+- Join as a chef page
+- Basic chef application form
+
+### Version 1 Decisions
+
+For the first version, I decided not to use fake chef profiles.
+
+Instead of adding random chef names, ratings, prices, and bios, the MVP uses cuisine categories such as:
+
+- British
+- Indian
+- Caribbean
+- African
+- Italian
+- Plant-Based
+
+This keeps the project honest while the platform is still being built.
+
+The chef category pages are designed to show where approved chef profiles will appear in the future.
+
+### Current User Journey
+
+The current user journey is:
+
+1. User lands on the homepage
+2. User clicks browse chefs
+3. User chooses a cuisine category
+4. User views a category page
+5. Chefs can use the "Join as a Chef" form to apply
+
+### Current Limitations
+
+Version 1 does not include:
+
+- Real chef profiles
+- Database storage
+- Login or authentication
+- Admin dashboard
+- Payment system
+- Ratings and reviews
+- Image or video uploads
+- Customer enquiry system
+
+These features are planned for future versions.
+
+### Issues Encountered During Version 1
+
+During the build, I encountered and solved several setup and coding issues.
+
+#### Node.js Was Not Installed
+
+When first trying to run Node commands, the terminal did not recognise `node`.
+
+This was fixed by installing Node.js on Windows and checking it with:
+
+"```bash
+node -v
+npm -v"
